@@ -1,0 +1,107 @@
+body {
+  font: 2.2em "Fira Sans", sans-serif;
+  text-align: center;
+}
+
+table {
+  border-spacing: 4rem 2rem;
+  width: 40%;
+}
+
+.logo {
+  margin-top: 3rem;
+}
+.logo__img {
+  border-radius: 20%;
+  height: 3em;
+  width: auto;
+  animation: bounceIn 0.6s;
+  transform: rotate(0deg) scale(1) translateZ(0);
+  transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+  cursor: pointer;
+}
+.logo__img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.container__menu {
+  margin: auto;
+}
+.container__menu td {
+  box-shadow: 1px 1px 12px #555;
+  margin: 10px 2px 10px 2px;
+  height: 18rem;
+}
+.container__menu__top__left {
+  height: 9rem;
+  background-color: #ff8a80;
+  color: #795548;
+}
+.container__menu__top__right {
+  color: white;
+  background: linear-gradient(to right, #8D6E63 0%, #7E57C2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container__menu__bottom {
+  font-family: cursive;
+}
+.container__menu__bottom__left {
+  color: white;
+  background: linear-gradient(to right, #4429a5 0%, #33ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container__menu__bottom__right {
+  color: white;
+  background: linear-gradient(to right, #388E3C 0%, #B2FF59 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header, footer {
+  background-color: #00695C;
+  color: #FFC400;
+  width: 80%;
+  height: 3rem;
+  margin: auto;
+}
+header > span, footer > span {
+  margin: 4rem 20rem;
+}
+
+div.button {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  background-color: #00695C;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 1rem 4rem 1rem 4rem;
+  color: #FFC400;
+  text-align: center;
+  font-size: 28px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+button:hover {
+  box-shadow: 0 4px #4fca97;
+  top: 4px;
+}
+button:active {
+  box-shadow: none;
+  top: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=layout.css.map */
