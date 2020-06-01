@@ -140,8 +140,15 @@ button {
         margin: auto;
         >span{
             margin:  4rem 20rem;
-            width: 50%;
+          
 
         }
-        
+        &__left {
+            width: 50%;
+            text-align: left;
+        }
+        &__right {
+            width: 50%;
+            text-align: right;
+        }
     }

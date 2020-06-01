@@ -127,7 +127,14 @@ header, footer {
 }
 header > span, footer > span {
   margin: 4rem 20rem;
+}
+header__left, footer__left {
   width: 50%;
+  text-align: left;
+}
+header__right, footer__right {
+  width: 50%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=layout.css.map */
