@@ -127,6 +127,7 @@ header, footer {
 }
 header > span, footer > span {
   margin: 4rem 20rem;
+  width: 50%;
 }
 
 /*# sourceMappingURL=layout.css.map */
