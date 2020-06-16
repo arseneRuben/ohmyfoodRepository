@@ -87,6 +87,16 @@ a {
 .container__note table {
   margin: auto;
 }
+.container__note table td {
+  display: flex;
+  flex-direction: row;
+}
+.container__note table td hr {
+  margin-top: 1.5rem;
+  background-image: url(../images/bg_hr_2.jpg);
+  height: 8px;
+  width: 11rem;
+}
 .container__note span {
   text-align: center;
 }

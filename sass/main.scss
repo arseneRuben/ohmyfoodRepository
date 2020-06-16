@@ -93,6 +93,16 @@ a {
     }
     table {
         margin:auto;
+        td {
+          display:flex;
+          flex-direction: row;
+        hr {
+          margin-top: 1.5rem ;
+          background-image : url(../images/bg_hr_2.jpg);
+            height:  8px;
+            width: 11rem;
+        }
+      }
     }
     span {
       text-align: center;
