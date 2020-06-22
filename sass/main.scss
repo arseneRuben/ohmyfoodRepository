@@ -204,7 +204,7 @@ footer{
   display: flex;
   justify-content: space-around;
   vertical-align: middle; 
-  position: fixed;
+ 
   bottom: 0;
 }
 header,
@@ -212,7 +212,7 @@ footer {
     
     
    
-    position: sticky;
+  position: fixed;
 	border-width: 1px 0;
 	overflow: hidden;
   background-color: $darkgreen;
