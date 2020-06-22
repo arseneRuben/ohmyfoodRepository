@@ -87,6 +87,10 @@ a {
 .container__note table {
   margin: auto;
 }
+.container__note table tr {
+  display: flex;
+  flex-direction: row;
+}
 .container__note table td {
   display: flex;
   flex-direction: row;
@@ -95,7 +99,10 @@ a {
   margin-top: 1.5rem;
   background-image: url(../images/bg_hr_2.jpg);
   height: 8px;
-  width: 11rem;
+  width: 10rem;
+}
+.container__note table td h2 {
+  padding: 0 2rem 0 2rem;
 }
 .container__note span {
   text-align: center;
