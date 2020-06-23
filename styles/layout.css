@@ -80,29 +80,47 @@ a {
   box-shadow: 1px 1px 12px #555;
   padding: 2rem 2rem;
 }
+.container__note > span {
+  font: bold 1em "Comic Sans MS", sans-serif;
+}
 .container__note article {
   font-size: 0.5em;
   text-align: left;
+  width: 100%;
 }
 .container__note table {
   margin: auto;
+  width: 70%;
 }
 .container__note table tr {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
-.container__note table td {
+.container__note table td:nth-child(odd) {
+  text-align: left;
+  width: 80%;
+}
+.container__note table td:nth-child(even) {
+  text-align: right;
+  width: 20%;
+}
+.container__note table .container__note__banner td {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
-.container__note table td hr {
+.container__note table .container__note__banner td hr {
   margin-top: 1.5rem;
   background-image: url(../images/bg_hr_2.jpg);
   height: 8px;
-  width: 10rem;
+  width: 30%;
 }
-.container__note table td h2 {
-  padding: 0 2rem 0 2rem;
+.container__note table .container__note__banner td h2 {
+  padding: 0px 0px 0px 0px;
+  width: 50%;
+  font: bold 1.4em "Open Sans", sans-serif;
+  white-space: nowrap;
 }
 .container__note span {
   text-align: center;
@@ -192,6 +210,7 @@ footer {
 
 header,
 footer {
+  transform: translateX(10%);
   position: fixed;
   border-width: 1px 0;
   overflow: hidden;
