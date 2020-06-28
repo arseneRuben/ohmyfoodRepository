@@ -9,7 +9,7 @@ a {
 
 .logo {
   margin-top: 3rem;
-  z-index: -1;
+  z-index: 0;
   &__img {
     border-radius: 20%;
     height: 3em;
@@ -26,7 +26,8 @@ a {
 }
 
 .container {
-  margin-top: 3rem;
+  z-index: 1;
+ 
   &__menu {
     margin:auto;
     width: 50%;
@@ -49,6 +50,7 @@ a {
     }
 
     &__top {
+      
       &__left {
         background-color: #ff8a80;
         color: #795548;
@@ -83,6 +85,7 @@ a {
     }
   }
   &__note {
+   
     margin:auto;
     width: 50%;
     background-color: #f8bbd0;
@@ -141,9 +144,9 @@ a {
     span {
       text-align: center;
     }
-.fa{
-    color: orange;
-}
+  .fa{
+      color: orange;
+  }
   }
   &__delice {
     box-shadow: 1px 1px 12px #555;
@@ -378,24 +381,30 @@ button {
 
 
 header{
-  z-index: 1;
+  
   top: 0;
   padding-top: 1%;
   margin: auto;
+  
 }
 
 footer{
   display: flex;
   justify-content: space-around;
   vertical-align: middle; 
- 
+  padding-top: 2rem;
+  margin-top: 2rem;;
   bottom: 0;
+  
+  
+  
+  
 }
 header,
 footer {
+  z-index: -1;
     
-    
-  transform:translateX(10%);
+  transform:translateX(12%);
   position: fixed;
 	border-width: 1px 0;
 	overflow: hidden;
@@ -461,6 +470,43 @@ $color: orange;
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-timing-function: linear;
+}
+
+
+footer>span:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
 }
 
 @keyframes coloring{
