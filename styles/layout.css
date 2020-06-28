@@ -24,9 +24,6 @@ a {
   transform: rotate(10deg) scale(1.1);
 }
 
-.container {
-  z-index: 1;
-}
 .container__menu {
   margin: auto;
   width: 50%;
@@ -75,7 +72,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .container__note {
-  padding-top: 10%;
   margin: auto;
   width: 50%;
   background-color: #f8bbd0;
@@ -339,14 +335,12 @@ footer {
 
 header,
 footer {
-  z-index: -1;
-  transform: translateX(12%);
   position: fixed;
   border-width: 1px 0;
   overflow: hidden;
   background-color: #00695c;
   color: #ffc400;
-  width: 80%;
+  width: 100%;
   height: 4rem;
   margin: auto;
 }
