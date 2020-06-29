@@ -8,7 +8,7 @@ a {
 }
 
 .logo {
-  margin-top: 3rem;
+  margin-top: 8rem;
   z-index: 0;
 }
 .logo__img {
@@ -73,13 +73,13 @@ a {
 }
 .container__note {
   margin: auto;
-  width: 50%;
+  width: 60%;
   background-color: #f8bbd0;
   box-shadow: 1px 1px 12px #555;
   padding: 2rem 2rem;
 }
 .container__note > span {
-  font: bold 1em "Comic Sans MS", sans-serif;
+  font: bold 0.8em "Comic Sans MS", sans-serif;
 }
 .container__note article {
   font-size: 0.5em;
@@ -88,7 +88,7 @@ a {
 }
 .container__note table {
   margin: auto;
-  width: 70%;
+  width: 100%;
 }
 .container__note table tr {
   display: flex;
@@ -129,9 +129,9 @@ a {
 .container__delice {
   box-shadow: 1px 1px 12px #555;
   margin: auto;
-  padding: 6% 0 6% 0;
-  margin-bottom: 8%;
-  width: 50%;
+  margin-top: 6%;
+  padding: 2% 0 2% 0;
+  width: 55%;
   vertical-align: center;
   background-color: #EEEEEE;
 }
@@ -182,9 +182,9 @@ a {
 .container__chic {
   background-color: #ffefff;
   margin: auto;
-  padding: 6% 0 6% 0;
-  margin-bottom: 8%;
-  width: 50%;
+  padding: 2% 0 0 0;
+  margin-top: 6%;
+  width: 60%;
   vertical-align: center;
 }
 .container__chic > span {
@@ -302,12 +302,12 @@ button {
   color: #ffc400;
   text-align: center;
   font-size: 28px;
+  padding-bottom: 2rem;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
-  margin-bottom: 4rem;
 }
 button:hover {
   box-shadow: 0 4px #4fca97;
@@ -321,7 +321,7 @@ button:active {
 header {
   top: 0;
   padding-top: 1%;
-  margin: auto;
+  margin: 0 0 5rem 0;
 }
 
 footer {
