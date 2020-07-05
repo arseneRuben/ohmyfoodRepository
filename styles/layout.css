@@ -8,7 +8,7 @@ a {
 }
 
 .logo {
-  margin-top: 8rem;
+  margin-top: 4rem;
   z-index: 0;
 }
 .logo__img {
@@ -27,11 +27,11 @@ a {
 .container__menu {
   margin: auto;
   width: 50%;
-  border-spacing: 4rem 2rem;
+  border-spacing: 2rem 1rem;
 }
 .container__menu td {
   box-shadow: 1px 1px 12px #555;
-  height: 18rem;
+  height: 10rem;
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -73,6 +73,7 @@ a {
 }
 .container__note {
   margin: auto;
+  margin-top: 6rem;
   width: 60%;
   background-color: #f8bbd0;
   box-shadow: 1px 1px 12px #555;
@@ -182,8 +183,8 @@ a {
 .container__chic {
   background-color: #ffefff;
   margin: auto;
-  padding: 2% 0 0 0;
-  margin-top: 6%;
+  padding: 1% 0 0 0;
+  margin-top: 5%;
   width: 60%;
   vertical-align: center;
 }
@@ -287,6 +288,20 @@ a {
   width: 50%;
   white-space: nowrap;
 }
+.container .contact {
+  margin: auto;
+  width: 60%;
+}
+.container .contact form {
+  margin: auto;
+}
+.container .contact form textarea {
+  width: 30rem;
+  padding: 12px 20px;
+  border: 1px solid #888;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
 
 div.button {
   text-align: center;
@@ -298,11 +313,11 @@ button {
   border-radius: 10px;
   outline: none;
   border: none;
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 1rem 1rem 1rem;
   color: #ffc400;
   text-align: center;
-  font-size: 28px;
-  padding-bottom: 2rem;
+  font-size: 25px;
+  padding-bottom: 3rem;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -320,7 +335,6 @@ button:active {
 
 header {
   top: 0;
-  padding-top: 1%;
   margin: 0 0 5rem 0;
 }
 

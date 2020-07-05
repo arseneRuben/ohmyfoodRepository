@@ -8,7 +8,7 @@ a {
 }
 
 .logo {
-  margin-top: 8rem;
+  margin-top: 4rem;
   z-index: 0;
   &__img {
     border-radius: 20%;
@@ -31,14 +31,15 @@ a {
   &__menu {
    
     margin:auto;
+  
     width: 50%;
-    border-spacing: 4rem 2rem;
+    border-spacing: 2rem 1rem;
     
     td {
       box-shadow: 1px 1px 12px #555;
       
       //margin: 10px 2px 10px 2px;
-      height: 18rem;
+      height: 10rem;
       opacity: 1;
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
@@ -92,6 +93,7 @@ a {
   &__note {
    
     margin:auto;
+    margin-top: 6rem;
     width: 60%;
     background-color: #f8bbd0;
     box-shadow: 1px 1px 12px #555;
@@ -225,8 +227,8 @@ a {
     
     background-color: #ffefff;
     margin:auto;
-    padding:  2% 0 0 0;
-    margin-top: 6%;
+    padding:  1% 0 0 0;
+    margin-top: 5%;
     width: 60%;
     
     vertical-align: center;
@@ -348,6 +350,21 @@ a {
 
     
   }
+  .contact{
+    margin: auto;
+    width: 60%;
+    form{
+      margin: auto;
+      textarea {
+        width: 30rem;
+        padding: 12px 20px;
+        border: 1px solid #888; 
+        margin: 8px 0;
+        box-sizing: border-box;
+       }
+    }
+  
+  }
 }
 
 div.button {
@@ -359,11 +376,11 @@ button {
   border-radius: 10px;
   outline: none;
   border: none;
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 1rem 1rem 1rem;
   color: #ffc400;
   text-align: center;
-  font-size: 28px;
-  padding-bottom: 2rem;
+  font-size: 25px;
+  padding-bottom: 3rem;
   
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -388,7 +405,7 @@ button {
 header{
   
   top: 0;
-  padding-top: 1%;
+  ///padding-top: 1%;
   margin: 0 0 5rem 0;
   
 }
