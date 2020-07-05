@@ -1,6 +1,9 @@
 $darkgreen : #00695c;
+
+
 body {
-  font: 1.8em 'Fira Sans', sans-serif;
+  font: 1.8rem 'Fira Sans', sans-serif;
+ 
   text-align: center;
 }
 a {
@@ -211,6 +214,7 @@ a {
              
              margin-top: 3%;
            }
+          
            span{
              padding: 0px 50px 0px 50px;
              width: 50%;
@@ -351,8 +355,9 @@ a {
     
   }
   .contact{
+    font-size: 20px;
     margin: auto;
-    width: 60%;
+    width: 70%;
     form{
       margin: auto;
       textarea {
@@ -376,7 +381,7 @@ button {
   border-radius: 10px;
   outline: none;
   border: none;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1.5rem 1.5rem 1rem;
   color: #ffc400;
   text-align: center;
   font-size: 25px;
@@ -464,6 +469,7 @@ $color: orange;
   border-radius:50%;
   position:relative;
   @extend .animate-coloring;
+  margin-top: 0.5rem;
   
   &:before,
   &:after{
@@ -541,4 +547,100 @@ footer>span:hover {
   100%{
     background-color:$color;
   }
+}
+
+
+@media  all and (max-width: 1024px)
+{
+  body {
+    font: 1.0rem 'Fira Sans', sans-serif;
+    .wrapper {
+     
+    display: flex;
+    .container {
+
+      justify-content: space-around;
+      align-items: center;
+      &__menu {
+       
+        margin: 1rem 0rem 1rem 0rem;
+        padding: 1rem 0rem 1rem 0rem;
+        width: 80%;
+     
+      }
+  }
+  
+  }
+  
+div.button {
+  text-align: center;
+}
+button {
+  display: inline-block;
+  background-color:$darkgreen;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem 1.5rem 1rem;
+  color: #ffc400;
+  text-align: center;
+  font-size: 1rem;
+  
+  
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+
+  &:hover {
+    box-shadow: 0 4px #4fca97;
+    top: 4px;
+  }
+  &:active {
+    box-shadow: none;
+    top: 8px;
+  }
+
+  
+}
+
+
+
+}
+
+
+.loader{
+ 
+  background-color:$color;
+  width:$size;
+  height:$size;
+  border-radius:50%;
+  position:relative;
+  @extend .animate-coloring;
+  margin-top: 0.5rem;
+  
+  &:before,
+  &:after{
+      content:" ";
+      position:absolute;
+      background-color:$color;
+      width:$size;
+      height:$size;
+      border-radius:50%;
+  }
+  
+  &:before{
+    right:-80px;
+    @extend .animate-coloring;
+    animation-delay:0.5s;
+  }
+  &:after{
+    right:-160px;
+    @extend .animate-coloring;
+    animation-delay:1;
+  }
+}
+
 }

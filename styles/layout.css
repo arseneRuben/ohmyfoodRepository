@@ -1,5 +1,5 @@
 body {
-  font: 1.8em "Fira Sans", sans-serif;
+  font: 1.8rem "Fira Sans", sans-serif;
   text-align: center;
 }
 
@@ -289,8 +289,9 @@ a {
   white-space: nowrap;
 }
 .container .contact {
+  font-size: 20px;
   margin: auto;
-  width: 60%;
+  width: 70%;
 }
 .container .contact form {
   margin: auto;
@@ -313,7 +314,7 @@ button {
   border-radius: 10px;
   outline: none;
   border: none;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1.5rem 1.5rem 1rem;
   color: #ffc400;
   text-align: center;
   font-size: 25px;
@@ -377,6 +378,7 @@ footer__right {
   height: 12px;
   border-radius: 50%;
   position: relative;
+  margin-top: 0.5rem;
 }
 .loader:before, .loader:after {
   content: " ";
@@ -473,6 +475,75 @@ footer > span:hover {
   }
   100% {
     background-color: orange;
+  }
+}
+@media all and (max-width: 1024px) {
+  body {
+    font: 1rem "Fira Sans", sans-serif;
+  }
+  body .wrapper {
+    display: flex;
+  }
+  body .wrapper .container {
+    justify-content: space-around;
+    align-items: center;
+  }
+  body .wrapper .container__menu {
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 80%;
+  }
+  body div.button {
+    text-align: center;
+  }
+  body button {
+    display: inline-block;
+    background-color: #00695c;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem 1.5rem 1rem;
+    color: #ffc400;
+    text-align: center;
+    font-size: 1rem;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  body button:hover {
+    box-shadow: 0 4px #4fca97;
+    top: 4px;
+  }
+  body button:active {
+    box-shadow: none;
+    top: 8px;
+  }
+
+  .loader {
+    background-color: orange;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 0.5rem;
+  }
+  .loader:before, .loader:after {
+    content: " ";
+    position: absolute;
+    background-color: orange;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .loader:before {
+    right: -80px;
+    animation-delay: 0.5s;
+  }
+  .loader:after {
+    right: -160px;
+    animation-delay: 1;
   }
 }
 
