@@ -234,20 +234,15 @@ a {
     margin:auto;
     padding:  1% 0 0 0;
     margin-top: 5%;
-    width: 60%;
+    width: 50%;
     
     vertical-align: center;
     
-    >span{
-    /*  background: linear-gradient(to right #795548  0%, #6200EA 100%) ;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-     */
-    }
+ 
     table {
       margin:auto;
       ;
-       width: 80%;
+       width: 70%;
        font:  0.6em "Open Sans", sans-serif;
       tr {
         display : flex;
@@ -257,13 +252,13 @@ a {
 
       td:nth-child(odd){
         text-align: left;
-        width: 80%;
-        padding: 1rem 3rem 0 3rem;
+        width: 90%;
+        padding: 1rem 2rem 0 2rem;
       }
       td:nth-child(even){
         text-align: right;
-        width: 20%;
-        padding: 1rem 3rem 0 3rem;
+        width: 10%;
+        padding: 1rem 2rem 0 2rem;
       }
       td[colspan="2"]{
         padding: 1rem 1rem 0 1rem;
@@ -276,12 +271,12 @@ a {
           width: 100%;
           font: bold 0.7em "Open Sans", sans-serif;
           img {
-            height: 30%;
+            height: 20%;
             margin-top: 3%;
           }
           span{
-            padding: 0px 50px 0px 50px;
-            width: 50%;
+            padding: 0rem 1rem 0rem 1rem;
+            width: 60%;
             white-space: nowrap;
 
           }
@@ -295,60 +290,54 @@ a {
    
   }
   &__palette {
-    >span{
-    /*
-    background: linear-gradient(to right, #4fca97  0%, rgb(241, 242, 245) 100%) ;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    */
-  }
+    font:  0.7em "Open Sans", sans-serif;
     margin:auto;
   
     margin-bottom: 2rem;
-    width: 50%;
+    width: 70%;
     
     vertical-align: center;
     table {
       margin:auto;
-      ;
+      width: 100%;
+     tr {
+       display : flex;
+       flex-direction: row;
+       width: 100%;
+     }
+     td:nth-child(odd){
+       text-align: left;
        width: 80%;
-       font:  0.6em "Open Sans", sans-serif;
-      tr {
-        display : flex;
-        flex-direction: row;
-        width: 100%;
-      }
-
-      td:nth-child(odd){
-        text-align: left;
-        width: 80%;
-        padding: 1rem 3rem 0 3rem;
-      }
-      td:nth-child(even){
-        text-align: right;
-        width: 20%;
-        padding: 1rem 3rem 0 3rem;
-      }
-      td[colspan="2"]{
-        padding: 1rem 1rem 0 1rem;
-      }
+       padding-left: 10%;
+     }
+     td:nth-child(even){
+       text-align: right;
+       width: 20%;
+       margin-right: 10%;
+     }
       .container__palette__banner {
+       
         td{
           display : flex;
           flex-direction: row;
-          padding-top: 1rem;
           width: 100%;
-          font: bold 0.7em "Open Sans", sans-serif;
-          img {
-            height: 20%;
-            margin-top: 3%;
+          hr {
+            margin-top: 1.5rem ;
+           
+            background-image : url(../images/trait_2.PNG);
+              height:  8px;
+              width: 35%;
           }
-          span{
-            padding: 0px 50px 0px 50px;
+         
+          h2{
+            padding: 0px 0px 0px 0px;
             width: 50%;
+           
             white-space: nowrap;
+           
 
           }
+         
         }
       }
   }
@@ -561,16 +550,30 @@ footer>span:hover {
     font: 1rem 'Fira Sans', sans-serif;
     .container {
       &__menu {
-       
-        
         td {
         
           font: 1rem 'Fira Sans', sans-serif;
-      
         }
-    
-    
-     
+      }
+      &_chic {
+        width: 100%;
+        .container__chic__banner {
+          td{
+            display : flex;
+            flex-direction: row;
+            padding-top: 1rem;
+            width: 100%;
+            font: bold 0.7em "Open Sans", sans-serif;
+            img {
+             display: none;
+            }
+            span{
+              display: none
+  
+            }
+          }
+        }
+        
       }
     }
     button {
