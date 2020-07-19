@@ -3,16 +3,14 @@ body {
   margin: 0 0 0 0;
   text-align: center;
 }
-
-a {
+body a {
   text-decoration: none;
 }
-
-.logo {
+body .logo {
   margin-top: 3rem;
   z-index: -1;
 }
-.logo__img {
+body .logo__img {
   border-radius: 20%;
   height: 3em;
   width: auto;
@@ -21,21 +19,20 @@ a {
   transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
   cursor: pointer;
 }
-.logo__img:hover {
+body .logo__img:hover {
   transform: rotate(10deg) scale(1.1);
 }
-
-.container {
+body .container {
   width: 50%;
   margin: auto;
   padding-top: 3%;
 }
-.container__menu {
+body .container__menu {
   margin: auto;
   width: 50%;
   border-spacing: 2rem 1rem;
 }
-.container__menu td {
+body .container__menu td {
   box-shadow: 1px 1px 12px #555;
   font: 1.2rem "Fira Sans", sans-serif;
   height: 10rem;
@@ -43,7 +40,7 @@ a {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.container__menu td:hover {
+body .container__menu td:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
   -o-transform: scale(1.1, 1.1);
@@ -51,20 +48,20 @@ a {
   transform: scale(1.1, 1.1);
   opacity: 0.5;
 }
-.container__menu__top__left {
+body .container__menu__top__left {
   background-color: #ffcdd2;
   color: #3E2723;
 }
-.container__menu__top__right {
+body .container__menu__top__right {
   color: #ffebee;
   background: linear-gradient(to right, #8d6e63 0%, #7e57c2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container__menu__bottom {
+body .container__menu__bottom {
   font-family: cursive;
 }
-.container__menu__bottom__left {
+body .container__menu__bottom__left {
   background: linear-gradient(to right, #4429a5 0%, #33ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -72,282 +69,281 @@ a {
   color: white;
   background-color: #E0E0E0;
 }
-.container__menu__bottom__right {
+body .container__menu__bottom__right {
   color: white;
   background: linear-gradient(to right, #388e3c 0%, #b2ff59 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container__note {
-  padding: 1rem 2rem 3rem 2rem;
+body .container__note {
+  padding: 0 2rem 3rem 2rem;
   background-color: #f8bbd0;
   box-shadow: 1px 1px 12px #555;
 }
-.container__note > span {
+body .container__note > span {
   font: bold 0.8em "Comic Sans MS", sans-serif;
 }
-.container__note article {
+body .container__note article {
   font-size: 0.7em;
   text-align: left;
   width: 100%;
 }
-.container__note table {
+body .container__note table {
   width: 100%;
   margin: auto;
 }
-.container__note table tr {
+body .container__note table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.container__note table td:nth-child(odd) {
+body .container__note table td:nth-child(odd) {
   text-align: left;
   width: 80%;
 }
-.container__note table td:nth-child(even) {
+body .container__note table td:nth-child(even) {
   text-align: right;
   width: 20%;
 }
-.container__note table .container__note__banner td {
+body .container__note table .container__note__banner td {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
   width: 100%;
 }
-.container__note table .container__note__banner td hr {
+body .container__note table .container__note__banner td hr {
   background-color: #795548;
   height: 15%;
   margin-top: 3%;
-  width: 25%;
+  width: 30%;
 }
-.container__note table .container__note__banner td h2 {
+body .container__note table .container__note__banner td h2 {
   padding: 0px 0px 0px 0px;
   width: 80%;
+  text-align: center;
   font: bold 1.4em "Open Sans", sans-serif;
   white-space: nowrap;
 }
-.container__note table .container__note__banner td span {
+body .container__note table .container__note__banner td span {
   padding: 0rem 1rem 0rem 1rem;
   width: 50%;
   white-space: nowrap;
   text-align: center;
 }
-.container__note span {
+body .container__note span {
   text-align: center;
 }
-.container__note .fa {
+body .container__note .fa {
   color: orange;
 }
-.container__delice {
+body .container__delice {
   margin: auto;
   padding: 3rem 2rem 3rem 2rem;
   vertical-align: center;
   background-color: #EEEEEE;
 }
-.container__delice > span {
+body .container__delice > span {
   font: 2rem "URW Palladio L", serif;
   background: linear-gradient(to right, #180657 0%, #33ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container__delice table {
+body .container__delice table {
   margin: auto;
   width: 80%;
   font: 0.6em "URW Chancery L", cursive;
 }
-.container__delice table tr {
+body .container__delice table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.container__delice table tr:nth-child(1) hr, .container__delice table tr:nth-child(2) hr, .container__delice table tr:nth-child(3) hr, .container__delice table tr:nth-child(4) hr {
+body .container__delice table tr:nth-child(1) hr, body .container__delice table tr:nth-child(2) hr, body .container__delice table tr:nth-child(3) hr, body .container__delice table tr:nth-child(4) hr {
   background-color: #0D47A1;
   width: 35%;
   height: 20%;
 }
-.container__delice table tr:nth-child(5) hr, .container__delice table tr:nth-child(6) hr, .container__delice table tr:nth-child(7) hr, .container__delice table tr:nth-child(8) hr {
+body .container__delice table tr:nth-child(5) hr, body .container__delice table tr:nth-child(6) hr, body .container__delice table tr:nth-child(7) hr, body .container__delice table tr:nth-child(8) hr {
   background-color: #1E88E5;
   width: 35%;
   height: 20%;
 }
-.container__delice table tr:nth-child(9) hr, .container__delice table tr:nth-child(10) hr, .container__delice table tr:nth-child(11) hr, .container__delice table tr:nth-child(12) hr {
+body .container__delice table tr:nth-child(9) hr, body .container__delice table tr:nth-child(10) hr, body .container__delice table tr:nth-child(11) hr, body .container__delice table tr:nth-child(12) hr {
   background-color: #64B5F6;
   width: 35%;
   height: 20%;
 }
-.container__delice table td:nth-child(odd) {
+body .container__delice table td:nth-child(odd) {
   text-align: left;
   width: 80%;
   padding: 1rem 3rem 0 3rem;
 }
-.container__delice table td:nth-child(even) {
+body .container__delice table td:nth-child(even) {
   text-align: right;
   width: 20%;
   padding: 1rem 2rem 0 2rem;
 }
-.container__delice table td[colspan="2"] {
+body .container__delice table td[colspan="2"] {
   padding: 1rem 1rem 0 1rem;
 }
-.container__delice table .container__delice__banner td {
+body .container__delice table .container__delice__banner td {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
   width: 100%;
   font: bold 0.7em "Open Sans", sans-serif;
 }
-.container__delice table .container__delice__banner td img {
+body .container__delice table .container__delice__banner td img {
   height: 20%;
   margin-top: 3%;
 }
-.container__delice table .container__delice__banner td span {
+body .container__delice table .container__delice__banner td span {
   padding: 0px 50px 0px 50px;
   width: 50%;
   white-space: nowrap;
 }
-.container__chic {
+body .container__chic {
   padding: 3rem 2rem 3rem 2rem;
   box-shadow: 1px 1px 12px #555;
   background-color: #ffebee;
   text-align: center;
   vertical-align: center;
 }
-.container__chic > span {
+body .container__chic > span {
   font: 2rem "serif", sans-serif;
   background: linear-gradient(to right, #8D6E63 0%, #651FFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container__chic table {
+body .container__chic table {
   font: 1rem "serif", sans-serif;
-  margin: 0 7% 0 9%;
+  padding: 0 2rem 0 4rem;
 }
-.container__chic table tr {
+body .container__chic table tr {
   display: flex;
   flex-direction: row;
 }
-.container__chic table tr:nth-child(1), .container__chic table tr:nth-child(2), .container__chic table tr:nth-child(3), .container__chic table tr:nth-child(4) {
+body .container__chic table tr:nth-child(1), body .container__chic table tr:nth-child(2), body .container__chic table tr:nth-child(3), body .container__chic table tr:nth-child(4) {
   color: #8D6E63;
 }
-.container__chic table tr:nth-child(1) hr, .container__chic table tr:nth-child(2) hr, .container__chic table tr:nth-child(3) hr, .container__chic table tr:nth-child(4) hr {
+body .container__chic table tr:nth-child(1) hr, body .container__chic table tr:nth-child(2) hr, body .container__chic table tr:nth-child(3) hr, body .container__chic table tr:nth-child(4) hr {
   background-color: #8D6E63;
 }
-.container__chic table tr:nth-child(5), .container__chic table tr:nth-child(6), .container__chic table tr:nth-child(7), .container__chic table tr:nth-child(8) {
+body .container__chic table tr:nth-child(5), body .container__chic table tr:nth-child(6), body .container__chic table tr:nth-child(7), body .container__chic table tr:nth-child(8) {
   color: #AB47BC;
 }
-.container__chic table tr:nth-child(5) hr, .container__chic table tr:nth-child(6) hr, .container__chic table tr:nth-child(7) hr, .container__chic table tr:nth-child(8) hr {
+body .container__chic table tr:nth-child(5) hr, body .container__chic table tr:nth-child(6) hr, body .container__chic table tr:nth-child(7) hr, body .container__chic table tr:nth-child(8) hr {
   background-color: #AB47BC;
 }
-.container__chic table tr:nth-child(9), .container__chic table tr:nth-child(10), .container__chic table tr:nth-child(11), .container__chic table tr:nth-child(12) {
+body .container__chic table tr:nth-child(9), body .container__chic table tr:nth-child(10), body .container__chic table tr:nth-child(11), body .container__chic table tr:nth-child(12) {
   color: #651FFF;
 }
-.container__chic table tr:nth-child(9) hr, .container__chic table tr:nth-child(10) hr, .container__chic table tr:nth-child(11) hr, .container__chic table tr:nth-child(12) hr {
+body .container__chic table tr:nth-child(9) hr, body .container__chic table tr:nth-child(10) hr, body .container__chic table tr:nth-child(11) hr, body .container__chic table tr:nth-child(12) hr {
   background-color: #651FFF;
 }
-.container__chic table td:nth-child(odd) {
+body .container__chic table td:nth-child(odd) {
   text-align: left;
   width: 90%;
   padding: 1rem 2rem 0 2rem;
 }
-.container__chic table td:nth-child(even) {
+body .container__chic table td:nth-child(even) {
   text-align: right;
   width: 10%;
   padding: 1rem 2rem 0 2rem;
 }
-.container__chic table td[colspan="2"] {
+body .container__chic table td[colspan="2"] {
   padding: 1rem 1rem 0 1rem;
 }
-.container__chic table .container__chic__banner td {
+body .container__chic table .container__chic__banner td {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
   width: 100%;
   font: bold 0.7rem "Open Sans", sans-serif;
 }
-.container__chic table .container__chic__banner td hr {
+body .container__chic table .container__chic__banner td hr {
   height: 20%;
   margin-top: 3%;
   width: 20%;
 }
-.container__chic table .container__chic__banner td span {
+body .container__chic table .container__chic__banner td span {
   padding: 0rem 1rem 0rem 1rem;
   width: 60%;
   white-space: nowrap;
   text-align: center;
 }
-.container__palette {
+body .container__palette {
   padding: 0rem 6rem 4rem 2rem;
   background-color: #E8F5E9;
   font: 0.9rem "Apple Chancery", cursive;
   margin: auto;
 }
-.container__palette > span h2 {
+body .container__palette > h2 span {
   font: 2.6rem "Apple Chancery", cursive;
   background: linear-gradient(to right, #0c630f 0%, #CCFF90 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container__palette table {
+body .container__palette table {
   margin: auto;
   width: 100%;
 }
-.container__palette table tr {
+body .container__palette table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.container__palette table td:nth-child(odd) {
+body .container__palette table td:nth-child(odd) {
   text-align: left;
   width: 80%;
   margin-left: 10%;
 }
-.container__palette table td:nth-child(even) {
+body .container__palette table td:nth-child(even) {
   text-align: right;
   width: 20%;
   margin-right: 10%;
 }
-.container__palette table hr:nth-child(odd) {
+body .container__palette table hr:nth-child(odd) {
   background-image: linear-gradient(-90deg, #0c630f, #CCFF90);
 }
-.container__palette table hr:nth-child(even) {
+body .container__palette table hr:nth-child(even) {
   background-image: linear-gradient(-90deg, #CCFF90, #0c630f);
 }
-.container__palette table .container__palette__banner td {
+body .container__palette table .container__palette__banner td {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.container__palette table .container__palette__banner td hr {
+body .container__palette table .container__palette__banner td hr {
   margin-top: 1.5rem;
   height: 8px;
   width: 35%;
 }
-.container__palette table .container__palette__banner td h2 {
+body .container__palette table .container__palette__banner td h2 {
   padding: 0px 4rem 0px 4rem;
   width: 40%;
   font: 1.2rem "Apple Chancery", cursive;
   white-space: nowrap;
 }
-.container .contact {
+body .container .contact {
   font-size: 2rem;
   margin: auto;
   width: 70%;
 }
-.container .contact form {
+body .container .contact form {
   margin: auto;
 }
-.container .contact form textarea {
+body .container .contact form textarea {
   width: 30rem;
   padding: 12px 20px;
   border: 1px solid #888;
   margin: 8px 0;
   box-sizing: border-box;
 }
-
-div.button {
+body div.button {
   text-align: center;
 }
-
-button {
+body button {
   display: inline-block;
   background-color: #00695c;
   border-radius: 10px;
@@ -363,29 +359,26 @@ button {
   transition: all 0.5s;
   cursor: pointer;
 }
-button:hover {
+body button:hover {
   box-shadow: 0 4px #4fca97;
   top: 4px;
 }
-button:active {
+body button:active {
   box-shadow: none;
   top: 8px;
 }
-
-header {
+body header {
   top: 0;
   margin: 0 0 5rem 0;
 }
-
-footer {
+body footer {
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
   bottom: 0;
 }
-
-header,
-footer {
+body header,
+body footer {
   position: fixed;
   overflow: hidden;
   background-color: #00695c;
@@ -394,16 +387,16 @@ footer {
   height: 2rem;
   margin: auto;
 }
-header a,
-footer a {
+body header a,
+body footer a {
   color: #ffc400;
 }
-header__left,
-footer__left {
+body header__left,
+body footer__left {
   width: 40%;
 }
-header__right,
-footer__right {
+body header__right,
+body footer__right {
   width: 40%;
 }
 
@@ -566,8 +559,8 @@ footer > span:hover {
     width: 100%;
     margin: 0 0 0 0;
   }
-  body .container__chic span h1 {
-    font: 1.1rem "serif", sans-serif;
+  body .container__chic span b {
+    font: 1.5rem "serif", sans-serif;
   }
   body .container__chic table tr td:nth-child(odd) {
     text-align: left;
