@@ -79,21 +79,21 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .container__note {
-  margin-top: 6rem;
+  padding: 1rem 2rem 3rem 2rem;
   background-color: #f8bbd0;
   box-shadow: 1px 1px 12px #555;
-  padding: 2rem 2rem;
 }
 .container__note > span {
   font: bold 0.8em "Comic Sans MS", sans-serif;
 }
 .container__note article {
-  font-size: 0.5em;
+  font-size: 0.7em;
   text-align: left;
   width: 100%;
 }
 .container__note table {
   width: 100%;
+  margin: auto;
 }
 .container__note table tr {
   display: flex;
@@ -111,19 +111,26 @@ a {
 .container__note table .container__note__banner td {
   display: flex;
   flex-direction: row;
+  padding-top: 1rem;
   width: 100%;
 }
 .container__note table .container__note__banner td hr {
-  margin-top: 1.5rem;
-  background-image: url(../images/bg_hr_2.jpg);
-  height: 8px;
-  width: 30%;
+  background-color: #795548;
+  height: 15%;
+  margin-top: 3%;
+  width: 25%;
 }
 .container__note table .container__note__banner td h2 {
   padding: 0px 0px 0px 0px;
-  width: 50%;
+  width: 80%;
   font: bold 1.4em "Open Sans", sans-serif;
   white-space: nowrap;
+}
+.container__note table .container__note__banner td span {
+  padding: 0rem 1rem 0rem 1rem;
+  width: 50%;
+  white-space: nowrap;
+  text-align: center;
 }
 .container__note span {
   text-align: center;
@@ -135,8 +142,7 @@ a {
   box-shadow: 1px 1px 12px #555;
   margin: auto;
   margin-top: 6%;
-  padding: 2% 0 2% 0;
-  width: 55%;
+  padding: 3rem 2rem 3rem 2rem;
   vertical-align: center;
   background-color: #EEEEEE;
 }
@@ -186,6 +192,7 @@ a {
 }
 .container__chic {
   padding: 3rem 2rem 3rem 2rem;
+  box-shadow: 1px 1px 12px #555;
   background-color: #ffebee;
   text-align: center;
   vertical-align: center;
@@ -254,11 +261,16 @@ a {
   text-align: center;
 }
 .container__palette {
-  font: 0.7em "Open Sans", sans-serif;
+  padding: 0rem 6rem 4rem 2rem;
+  background-color: #E8F5E9;
+  font: 0.9rem "Apple Chancery", cursive;
   margin: auto;
-  margin-bottom: 2rem;
-  width: 70%;
-  vertical-align: center;
+}
+.container__palette > span h2 {
+  font: 2.6rem "Apple Chancery", cursive;
+  background: linear-gradient(to right, #0c630f 0%, #CCFF90 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .container__palette table {
   margin: auto;
@@ -272,12 +284,18 @@ a {
 .container__palette table td:nth-child(odd) {
   text-align: left;
   width: 80%;
-  padding-left: 10%;
+  margin-left: 10%;
 }
 .container__palette table td:nth-child(even) {
   text-align: right;
   width: 20%;
   margin-right: 10%;
+}
+.container__palette table hr:nth-child(odd) {
+  background-image: linear-gradient(-90deg, #0c630f, #CCFF90);
+}
+.container__palette table hr:nth-child(even) {
+  background-image: linear-gradient(-90deg, #CCFF90, #0c630f);
 }
 .container__palette table .container__palette__banner td {
   display: flex;
@@ -286,13 +304,13 @@ a {
 }
 .container__palette table .container__palette__banner td hr {
   margin-top: 1.5rem;
-  background-image: url(../images/trait_2.PNG);
   height: 8px;
   width: 35%;
 }
 .container__palette table .container__palette__banner td h2 {
-  padding: 0px 0px 0px 0px;
-  width: 50%;
+  padding: 0px 4rem 0px 4rem;
+  width: 40%;
+  font: 1.2rem "Apple Chancery", cursive;
   white-space: nowrap;
 }
 .container .contact {
@@ -549,6 +567,24 @@ footer > span:hover {
   }
   body .container__chic table tr td[colspan="2"] {
     padding: 1rem 0rem 0 1rem;
+  }
+  body .container__note {
+    padding: 0.5rem 0rem 0rem 0rem;
+    width: 80%;
+    margin: auto;
+  }
+  body .container__note table tr td:nth-child(odd) {
+    text-align: left;
+    width: 100%;
+    padding: 1rem 4rem 0 2rem;
+  }
+  body .container__note table tr td:nth-child(even) {
+    text-align: right;
+    width: 10%;
+    padding: 1rem 4rem 0 2rem;
+  }
+  body .container__note table tr td[colspan="2"] {
+    padding: 1rem 2rem 0 1rem;
   }
   body .container_delice {
     width: 100%;
