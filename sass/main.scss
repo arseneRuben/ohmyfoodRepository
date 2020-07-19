@@ -162,14 +162,18 @@ a {
   }
   }
   &__delice {
-    box-shadow: 1px 1px 12px #555;
+    $begincolor : #0D47A1;
+    $endcolor : #64B5F6;
+    $mediumcolor : #1E88E5;
+    $hr_with : 35%;
+    $hr_height : 20%;
+    
     margin:auto;
-    margin-top: 6%;
     padding: 3rem 2rem 3rem 2rem;
     vertical-align: center;
     background-color: #EEEEEE;
-    
     >span{
+      font:  2rem "URW Palladio L", serif;
     background: linear-gradient(to right, #180657 0% , #33ccff  100%) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,12 +182,40 @@ a {
        margin:auto;
        ;
         width: 80%;
-        font:  0.5em "Open Sans", sans-serif;
-       tr {
-         display : flex;
-         flex-direction: row;
-         width: 100%;
-       }
+        font:  0.6em "URW Chancery L", cursive;
+
+        tr {
+          display : flex;
+          flex-direction: row;
+          width: 100%;
+        }
+
+        tr:nth-child(1), tr:nth-child(2), tr:nth-child(3), tr:nth-child(4){
+         
+          hr {
+            background-color: $begincolor;
+            width:$hr_with;
+            height: $hr_height;
+          }
+        }
+        tr:nth-child(5), tr:nth-child(6), tr:nth-child(7), tr:nth-child(8){
+         
+          hr {
+            background-color: $mediumcolor;
+            width: $hr_with;
+            height: $hr_height;
+          }
+        }
+        tr:nth-child(9), tr:nth-child(10), tr:nth-child(11), tr:nth-child(12){
+          hr {
+            background-color: $endcolor;
+            width: $hr_with;
+            height: $hr_height;
+          }
+        }
+        
+
+      
  
        td:nth-child(odd){
          text-align: left;
@@ -646,13 +678,13 @@ body {
           
         td:nth-child(odd){
           text-align: left;
-          width: 100%;
-          padding: 1rem 4rem 0 2rem;
+          width: 90%;
+          padding: 1rem 2rem 0 1rem;
         }
         td:nth-child(even){
           text-align: right;
           width: 10%;
-          padding: 1rem 4rem 0 2rem;
+          padding: 1rem 2rem 0 1rem;
         }
         td[colspan="2"]{
           padding: 1rem 2rem 0 1rem;

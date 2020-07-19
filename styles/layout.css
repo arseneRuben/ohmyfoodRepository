@@ -139,14 +139,13 @@ a {
   color: orange;
 }
 .container__delice {
-  box-shadow: 1px 1px 12px #555;
   margin: auto;
-  margin-top: 6%;
   padding: 3rem 2rem 3rem 2rem;
   vertical-align: center;
   background-color: #EEEEEE;
 }
 .container__delice > span {
+  font: 2rem "URW Palladio L", serif;
   background: linear-gradient(to right, #180657 0%, #33ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -154,12 +153,27 @@ a {
 .container__delice table {
   margin: auto;
   width: 80%;
-  font: 0.5em "Open Sans", sans-serif;
+  font: 0.6em "URW Chancery L", cursive;
 }
 .container__delice table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+.container__delice table tr:nth-child(1) hr, .container__delice table tr:nth-child(2) hr, .container__delice table tr:nth-child(3) hr, .container__delice table tr:nth-child(4) hr {
+  background-color: #0D47A1;
+  width: 35%;
+  height: 20%;
+}
+.container__delice table tr:nth-child(5) hr, .container__delice table tr:nth-child(6) hr, .container__delice table tr:nth-child(7) hr, .container__delice table tr:nth-child(8) hr {
+  background-color: #1E88E5;
+  width: 35%;
+  height: 20%;
+}
+.container__delice table tr:nth-child(9) hr, .container__delice table tr:nth-child(10) hr, .container__delice table tr:nth-child(11) hr, .container__delice table tr:nth-child(12) hr {
+  background-color: #64B5F6;
+  width: 35%;
+  height: 20%;
 }
 .container__delice table td:nth-child(odd) {
   text-align: left;
@@ -575,13 +589,13 @@ footer > span:hover {
   }
   body .container__note table tr td:nth-child(odd) {
     text-align: left;
-    width: 100%;
-    padding: 1rem 4rem 0 2rem;
+    width: 90%;
+    padding: 1rem 2rem 0 1rem;
   }
   body .container__note table tr td:nth-child(even) {
     text-align: right;
     width: 10%;
-    padding: 1rem 4rem 0 2rem;
+    padding: 1rem 2rem 0 1rem;
   }
   body .container__note table tr td[colspan="2"] {
     padding: 1rem 2rem 0 1rem;
