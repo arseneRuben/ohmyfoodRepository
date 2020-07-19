@@ -2,7 +2,7 @@ $darkgreen : #00695c;
 
 
 body {
-  font: 1.6rem 'Fira Sans', sans-serif;
+  font: 24px 'Fira Sans', sans-serif;
   margin: 0 0 0 0;
   text-align: center;
 }
@@ -30,7 +30,9 @@ a {
 }
 
 .container {
-
+  width: 50%;
+  margin: auto;
+ padding-top: 3%;
  
   &__menu {
    
@@ -96,11 +98,12 @@ a {
   }
   &__note {
    
-    margin:auto;
+    
     margin-top: 6rem;
-    width: 60%;
+  
     background-color: #f8bbd0;
     box-shadow: 1px 1px 12px #555;
+    
     padding: 2rem 2rem;
     >span {
       font: bold 0.8em "Comic Sans MS", sans-serif;
@@ -111,7 +114,7 @@ a {
       width: 100%;
     }
     table {
-        margin:auto;
+       
          width: 100%;
         tr {
           display : flex;
@@ -164,21 +167,14 @@ a {
     margin:auto;
     margin-top: 6%;
     padding:  2% 0 2% 0;
-    
-   
     width: 55%;
     vertical-align: center;
     background-color: #EEEEEE;
-
     >span{
-     
     background: linear-gradient(to right, #180657 0% , #33ccff  100%) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     };
-    
-    
-   
     table {
        margin:auto;
        ;
@@ -229,22 +225,47 @@ a {
     
   }
   &__chic {
-    margin:auto;
-   
-   
+     padding: 3rem 2rem 3rem 2rem;
+     background-color: #ffebee;
     
+    text-align: center;
     vertical-align: center;
-    
+    $begincolor : #8D6E63;
+    $endcolor : #651FFF;
+    $mediumcolor : #AB47BC;
+    >span{
+      
+      font: 2rem "serif", sans-serif;
+      background: linear-gradient(to right, $begincolor 0% , $endcolor 100%) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      };
  
     table {
-      margin:auto;
-      
+       font:  1rem "serif", sans-serif;
+       margin: 0 7% 0 9%;
        
-       font:  0.8em "Open Sans", sans-serif;
       tr {
         display : flex;
         flex-direction: row;
-        width: 80%;
+      }
+      tr:nth-child(1), tr:nth-child(2), tr:nth-child(3), tr:nth-child(4){
+        color: $begincolor;
+        hr {
+          background-color: $begincolor;
+        }
+      }
+      tr:nth-child(5), tr:nth-child(6), tr:nth-child(7), tr:nth-child(8){
+        color: $mediumcolor;
+        hr {
+          background-color: $mediumcolor;
+        }
+      }
+      tr:nth-child(9), tr:nth-child(10), tr:nth-child(11), tr:nth-child(12){
+        color: $endcolor;
+        hr {
+          background-color: $endcolor;
+        }
       }
 
       td:nth-child(odd){
@@ -266,24 +287,23 @@ a {
           flex-direction: row;
           padding-top: 1rem;
           width: 100%;
-          font: bold 0.7em "Open Sans", sans-serif;
-          img {
+          font: bold 0.7rem "Open Sans", sans-serif;
+          hr {
             height: 20%;
             margin-top: 3%;
+            width: 20%;
+           
           }
           span{
             padding: 0rem 1rem 0rem 1rem;
             width: 60%;
             white-space: nowrap;
-
+            text-align: center;
           }
         }
       }
   }
-  span {
-    text-align: center;
-  }
-   
+ 
    
   }
   &__palette {
@@ -398,7 +418,7 @@ button {
 header{
   
   top: 0;
-  ///padding-top: 1%;
+ 
   margin: 0 0 5rem 0;
   
 }
@@ -407,38 +427,24 @@ footer{
   display: flex;
   justify-content: space-around;
   vertical-align: middle; 
-  padding-top: 1rem;
-  margin-top: 1rem;;
+ 
   bottom: 0;
-  
-  
-  
-  
 }
 header,
 footer {
-  
-    
-  
   position: fixed;
-
 	overflow: hidden;
   background-color: $darkgreen;
   color: #ffc400;
   width: 100%;
   height: 2rem;
-   margin: auto;
-
-  
+  margin: auto;
    a {
     color: #ffc400;
    }
   &__left {
     width: 40%;
-   
-    
   }
-
   &__right {
     width: 40%;
   }
@@ -539,29 +545,96 @@ footer>span:hover {
 }
 
 
+
+
+@keyframes hover-v {
+  0% {
+      transform: scaleX(0);
+      height: 5px;
+     }
+  45% {   
+      transform: scaleX(1.05);
+      height: 5px;
+     }
+  55% {height: 5px;}
+  100% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+}
+@keyframes no-hover-v {
+  0% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+  45% {height: 5px;}
+  55% {   
+      transform: scaleX(1.05);
+      height: 5px;
+      opacity: 1;
+     }
+  
+  100% {
+      transform: scaleX(0);
+      height: 5px;
+      opacity: .02;
+     }
+}
+
+
 @media  all and (max-width: 1024px)
 {
- 
 
-  body {
-    font: 1.4rem 'Fira Sans', sans-serif;
+  
+body {
+  font: 14px 'Fira Sans', sans-serif;
+  margin: 0 0 0 0;
+  text-align: center;
     .container {
+      width: 100%;
+      
+     padding-top: 3%;
+    
       &__menu {
         td {
         
           font: 1rem 'Fira Sans', sans-serif;
         }
       }
-      padding-top: 4rem;
-      &_chic {
-       
+     
+      &__chic {
+        padding: 3.5rem 0rem 0rem 0rem;
         width: 100%;
-        margin-top: 10%;
-        .container__chic__banner {
+        margin: 0 0 0 0;
+        span h1{
+          font: 1.1rem "serif", sans-serif;
+        }
+        table tr {
+        td:nth-child(odd){
+          text-align: left;
+          width: 90%;
+          padding: 1rem 0rem 0 0rem;
+        }
+        td:nth-child(even){
+          text-align: right;
+          width: 10%;
+          padding: 1rem 0rem 0 0rem;
+        }
+        td[colspan="2"]{
+          padding: 1rem 0rem 0 1rem;
+        }
+        }
+        
+      }
+      &_delice {
+        width: 100%;
+        margin:  0;
+        padding: 4rem 0 0 0;
+        background-color: #3E2723;
+        .container__delice__banner {
           td{
             display : flex;
             flex-direction: row;
-          
             width: 100% ;
             font: bold 0.7em "Open Sans", sans-serif;
             img {
@@ -569,18 +642,23 @@ footer>span:hover {
             }
             span{
               display: none
-  
             }
           }
         }
-        
       }
     }
     button {
       border-radius: 10px;
       font-size: 1rem;
     }
-  }
+   
+  
+  
+  
+}
+}
+
+  
 
   .loader{
  
@@ -613,4 +691,4 @@ footer>span:hover {
       animation-delay:1;
     }
   }
-}
+
