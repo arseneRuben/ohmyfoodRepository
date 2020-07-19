@@ -1,16 +1,20 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Lato';
 body {
   font: 24px "Fira Sans", sans-serif;
   margin: 0 0 0 0;
   text-align: center;
 }
-body a {
+
+a {
   text-decoration: none;
 }
-body .logo {
+
+.logo {
   margin-top: 3rem;
   z-index: -1;
 }
-body .logo__img {
+.logo__img {
   border-radius: 20%;
   height: 3em;
   width: auto;
@@ -19,20 +23,21 @@ body .logo__img {
   transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
   cursor: pointer;
 }
-body .logo__img:hover {
+.logo__img:hover {
   transform: rotate(10deg) scale(1.1);
 }
-body .container {
+
+.container {
   width: 50%;
   margin: auto;
   padding-top: 3%;
 }
-body .container__menu {
+.container__menu {
   margin: auto;
   width: 50%;
   border-spacing: 2rem 1rem;
 }
-body .container__menu td {
+.container__menu td {
   box-shadow: 1px 1px 12px #555;
   font: 1.2rem "Fira Sans", sans-serif;
   height: 10rem;
@@ -40,7 +45,7 @@ body .container__menu td {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-body .container__menu td:hover {
+.container__menu td:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
   -o-transform: scale(1.1, 1.1);
@@ -48,20 +53,20 @@ body .container__menu td:hover {
   transform: scale(1.1, 1.1);
   opacity: 0.5;
 }
-body .container__menu__top__left {
+.container__menu__top__left {
   background-color: #ffcdd2;
   color: #3E2723;
 }
-body .container__menu__top__right {
+.container__menu__top__right {
   color: #ffebee;
   background: linear-gradient(to right, #8d6e63 0%, #7e57c2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .container__menu__bottom {
+.container__menu__bottom {
   font-family: cursive;
 }
-body .container__menu__bottom__left {
+.container__menu__bottom__left {
   background: linear-gradient(to right, #4429a5 0%, #33ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,281 +74,283 @@ body .container__menu__bottom__left {
   color: white;
   background-color: #E0E0E0;
 }
-body .container__menu__bottom__right {
+.container__menu__bottom__right {
   color: white;
   background: linear-gradient(to right, #388e3c 0%, #b2ff59 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .container__note {
+.container__note {
   padding: 0 2rem 3rem 2rem;
   background-color: #f8bbd0;
   box-shadow: 1px 1px 12px #555;
 }
-body .container__note > span {
+.container__note > span {
   font: bold 0.8em "Comic Sans MS", sans-serif;
 }
-body .container__note article {
+.container__note article {
   font-size: 0.7em;
   text-align: left;
   width: 100%;
 }
-body .container__note table {
+.container__note table {
   width: 100%;
   margin: auto;
 }
-body .container__note table tr {
+.container__note table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-body .container__note table td:nth-child(odd) {
+.container__note table td:nth-child(odd) {
   text-align: left;
   width: 80%;
 }
-body .container__note table td:nth-child(even) {
+.container__note table td:nth-child(even) {
   text-align: right;
   width: 20%;
 }
-body .container__note table .container__note__banner td {
+.container__note table .container__note__banner td {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
   width: 100%;
 }
-body .container__note table .container__note__banner td hr {
+.container__note table .container__note__banner td hr {
   background-color: #795548;
   height: 15%;
   margin-top: 3%;
   width: 30%;
 }
-body .container__note table .container__note__banner td h2 {
+.container__note table .container__note__banner td h2 {
   padding: 0px 0px 0px 0px;
   width: 80%;
   text-align: center;
   font: bold 1.4em "Open Sans", sans-serif;
   white-space: nowrap;
 }
-body .container__note table .container__note__banner td span {
+.container__note table .container__note__banner td span {
   padding: 0rem 1rem 0rem 1rem;
   width: 50%;
   white-space: nowrap;
   text-align: center;
 }
-body .container__note span {
+.container__note span {
   text-align: center;
 }
-body .container__note .fa {
+.container__note .fa {
   color: orange;
 }
-body .container__delice {
+.container__delice {
   margin: auto;
   padding: 3rem 2rem 3rem 2rem;
   vertical-align: center;
   background-color: #EEEEEE;
 }
-body .container__delice > span {
+.container__delice > span {
   font: 2rem "URW Palladio L", serif;
   background: linear-gradient(to right, #180657 0%, #33ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .container__delice table {
+.container__delice table {
   margin: auto;
   width: 80%;
   font: 0.6em "URW Chancery L", cursive;
 }
-body .container__delice table tr {
+.container__delice table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-body .container__delice table tr:nth-child(1) hr, body .container__delice table tr:nth-child(2) hr, body .container__delice table tr:nth-child(3) hr, body .container__delice table tr:nth-child(4) hr {
+.container__delice table tr:nth-child(1) hr, .container__delice table tr:nth-child(2) hr, .container__delice table tr:nth-child(3) hr, .container__delice table tr:nth-child(4) hr {
   background-color: #0D47A1;
   width: 35%;
   height: 20%;
 }
-body .container__delice table tr:nth-child(5) hr, body .container__delice table tr:nth-child(6) hr, body .container__delice table tr:nth-child(7) hr, body .container__delice table tr:nth-child(8) hr {
+.container__delice table tr:nth-child(5) hr, .container__delice table tr:nth-child(6) hr, .container__delice table tr:nth-child(7) hr, .container__delice table tr:nth-child(8) hr {
   background-color: #1E88E5;
   width: 35%;
   height: 20%;
 }
-body .container__delice table tr:nth-child(9) hr, body .container__delice table tr:nth-child(10) hr, body .container__delice table tr:nth-child(11) hr, body .container__delice table tr:nth-child(12) hr {
+.container__delice table tr:nth-child(9) hr, .container__delice table tr:nth-child(10) hr, .container__delice table tr:nth-child(11) hr, .container__delice table tr:nth-child(12) hr {
   background-color: #64B5F6;
   width: 35%;
   height: 20%;
 }
-body .container__delice table td:nth-child(odd) {
+.container__delice table td:nth-child(odd) {
   text-align: left;
   width: 80%;
   padding: 1rem 3rem 0 3rem;
 }
-body .container__delice table td:nth-child(even) {
+.container__delice table td:nth-child(even) {
   text-align: right;
   width: 20%;
   padding: 1rem 2rem 0 2rem;
 }
-body .container__delice table td[colspan="2"] {
+.container__delice table td[colspan="2"] {
   padding: 1rem 1rem 0 1rem;
 }
-body .container__delice table .container__delice__banner td {
+.container__delice table .container__delice__banner td {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
   width: 100%;
   font: bold 0.7em "Open Sans", sans-serif;
 }
-body .container__delice table .container__delice__banner td img {
+.container__delice table .container__delice__banner td img {
   height: 20%;
   margin-top: 3%;
 }
-body .container__delice table .container__delice__banner td span {
+.container__delice table .container__delice__banner td span {
   padding: 0px 50px 0px 50px;
   width: 50%;
   white-space: nowrap;
 }
-body .container__chic {
+.container__chic {
   padding: 3rem 2rem 3rem 2rem;
   box-shadow: 1px 1px 12px #555;
   background-color: #ffebee;
   text-align: center;
   vertical-align: center;
 }
-body .container__chic > span {
+.container__chic > span {
   font: 2rem "serif", sans-serif;
   background: linear-gradient(to right, #8D6E63 0%, #651FFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .container__chic table {
+.container__chic table {
   font: 1rem "serif", sans-serif;
   padding: 0 2rem 0 4rem;
 }
-body .container__chic table tr {
+.container__chic table tr {
   display: flex;
   flex-direction: row;
 }
-body .container__chic table tr:nth-child(1), body .container__chic table tr:nth-child(2), body .container__chic table tr:nth-child(3), body .container__chic table tr:nth-child(4) {
+.container__chic table tr:nth-child(1), .container__chic table tr:nth-child(2), .container__chic table tr:nth-child(3), .container__chic table tr:nth-child(4) {
   color: #8D6E63;
 }
-body .container__chic table tr:nth-child(1) hr, body .container__chic table tr:nth-child(2) hr, body .container__chic table tr:nth-child(3) hr, body .container__chic table tr:nth-child(4) hr {
+.container__chic table tr:nth-child(1) hr, .container__chic table tr:nth-child(2) hr, .container__chic table tr:nth-child(3) hr, .container__chic table tr:nth-child(4) hr {
   background-color: #8D6E63;
 }
-body .container__chic table tr:nth-child(5), body .container__chic table tr:nth-child(6), body .container__chic table tr:nth-child(7), body .container__chic table tr:nth-child(8) {
+.container__chic table tr:nth-child(5), .container__chic table tr:nth-child(6), .container__chic table tr:nth-child(7), .container__chic table tr:nth-child(8) {
   color: #AB47BC;
 }
-body .container__chic table tr:nth-child(5) hr, body .container__chic table tr:nth-child(6) hr, body .container__chic table tr:nth-child(7) hr, body .container__chic table tr:nth-child(8) hr {
+.container__chic table tr:nth-child(5) hr, .container__chic table tr:nth-child(6) hr, .container__chic table tr:nth-child(7) hr, .container__chic table tr:nth-child(8) hr {
   background-color: #AB47BC;
 }
-body .container__chic table tr:nth-child(9), body .container__chic table tr:nth-child(10), body .container__chic table tr:nth-child(11), body .container__chic table tr:nth-child(12) {
+.container__chic table tr:nth-child(9), .container__chic table tr:nth-child(10), .container__chic table tr:nth-child(11), .container__chic table tr:nth-child(12) {
   color: #651FFF;
 }
-body .container__chic table tr:nth-child(9) hr, body .container__chic table tr:nth-child(10) hr, body .container__chic table tr:nth-child(11) hr, body .container__chic table tr:nth-child(12) hr {
+.container__chic table tr:nth-child(9) hr, .container__chic table tr:nth-child(10) hr, .container__chic table tr:nth-child(11) hr, .container__chic table tr:nth-child(12) hr {
   background-color: #651FFF;
 }
-body .container__chic table td:nth-child(odd) {
+.container__chic table td:nth-child(odd) {
   text-align: left;
   width: 90%;
   padding: 1rem 2rem 0 2rem;
 }
-body .container__chic table td:nth-child(even) {
+.container__chic table td:nth-child(even) {
   text-align: right;
   width: 10%;
   padding: 1rem 2rem 0 2rem;
 }
-body .container__chic table td[colspan="2"] {
+.container__chic table td[colspan="2"] {
   padding: 1rem 1rem 0 1rem;
 }
-body .container__chic table .container__chic__banner td {
+.container__chic table .container__chic__banner td {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
   width: 100%;
   font: bold 0.7rem "Open Sans", sans-serif;
 }
-body .container__chic table .container__chic__banner td hr {
+.container__chic table .container__chic__banner td hr {
   height: 20%;
   margin-top: 3%;
   width: 20%;
 }
-body .container__chic table .container__chic__banner td span {
+.container__chic table .container__chic__banner td span {
   padding: 0rem 1rem 0rem 1rem;
   width: 60%;
   white-space: nowrap;
   text-align: center;
 }
-body .container__palette {
+.container__palette {
   padding: 0rem 6rem 4rem 2rem;
   background-color: #E8F5E9;
   font: 0.9rem "Apple Chancery", cursive;
   margin: auto;
 }
-body .container__palette > h2 span {
+.container__palette > h2 span {
   font: 2.6rem "Apple Chancery", cursive;
   background: linear-gradient(to right, #0c630f 0%, #CCFF90 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .container__palette table {
+.container__palette table {
   margin: auto;
   width: 100%;
 }
-body .container__palette table tr {
+.container__palette table tr {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-body .container__palette table td:nth-child(odd) {
+.container__palette table td:nth-child(odd) {
   text-align: left;
   width: 80%;
   margin-left: 10%;
 }
-body .container__palette table td:nth-child(even) {
+.container__palette table td:nth-child(even) {
   text-align: right;
   width: 20%;
   margin-right: 10%;
 }
-body .container__palette table hr:nth-child(odd) {
+.container__palette table hr:nth-child(odd) {
   background-image: linear-gradient(-90deg, #0c630f, #CCFF90);
 }
-body .container__palette table hr:nth-child(even) {
+.container__palette table hr:nth-child(even) {
   background-image: linear-gradient(-90deg, #CCFF90, #0c630f);
 }
-body .container__palette table .container__palette__banner td {
+.container__palette table .container__palette__banner td {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-body .container__palette table .container__palette__banner td hr {
+.container__palette table .container__palette__banner td hr {
   margin-top: 1.5rem;
   height: 8px;
   width: 35%;
 }
-body .container__palette table .container__palette__banner td h2 {
+.container__palette table .container__palette__banner td h2 {
   padding: 0px 4rem 0px 4rem;
   width: 40%;
   font: 1.2rem "Apple Chancery", cursive;
   white-space: nowrap;
 }
-body .container .contact {
+.container .contact {
   font-size: 2rem;
   margin: auto;
   width: 70%;
 }
-body .container .contact form {
+.container .contact form {
   margin: auto;
 }
-body .container .contact form textarea {
+.container .contact form textarea {
   width: 30rem;
   padding: 12px 20px;
   border: 1px solid #888;
   margin: 8px 0;
   box-sizing: border-box;
 }
-body div.button {
+
+div.button {
   text-align: center;
 }
-body button {
+
+button {
   display: inline-block;
   background-color: #00695c;
   border-radius: 10px;
@@ -359,26 +366,29 @@ body button {
   transition: all 0.5s;
   cursor: pointer;
 }
-body button:hover {
+button:hover {
   box-shadow: 0 4px #4fca97;
   top: 4px;
 }
-body button:active {
+button:active {
   box-shadow: none;
   top: 8px;
 }
-body header {
+
+header {
   top: 0;
   margin: 0 0 5rem 0;
 }
-body footer {
+
+footer {
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
   bottom: 0;
 }
-body header,
-body footer {
+
+header,
+footer {
   position: fixed;
   overflow: hidden;
   background-color: #00695c;
@@ -387,17 +397,60 @@ body footer {
   height: 2rem;
   margin: auto;
 }
-body header a,
-body footer a {
+header a,
+footer a {
   color: #ffc400;
 }
-body header__left,
-body footer__left {
+header__left,
+footer__left {
   width: 40%;
 }
-body header__right,
-body footer__right {
+header__right,
+footer__right {
   width: 40%;
+}
+
+.underline {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 45px;
+}
+.underline .hover {
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.underline .hover:before, .underline .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #e69500;
+}
+.underline .hover.hover-3:before {
+  left: 50%;
+}
+.underline .hover.hover-3:after {
+  right: 50%;
+}
+.underline:hover {
+  cursor: pointer;
+}
+.underline:hover .hover:before, .underline:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+.underline:hover .hover.hover-3:before, .underline:hover .hover.hover-3:after {
+  width: 50%;
 }
 
 .loader {
