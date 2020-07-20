@@ -35,7 +35,7 @@ a {
 .container {
   width: 50%;
   margin: auto;
- padding-top: 3%;
+ padding-top: 2%;
  
   &__menu {
  
@@ -100,7 +100,7 @@ a {
     }
   }
   &__note {
-    padding: 0 2rem 3rem 2rem;
+    padding: 0 10rem 2rem 10rem;
     
     background-color: #f8bbd0;
     box-shadow: 1px 1px 12px #555;
@@ -136,7 +136,6 @@ a {
             padding-top: 1rem;
             width: 100%;
             hr {
-             
               background-color: #795548;;
                 height: 15%;
                 margin-top: 3%;
@@ -150,7 +149,7 @@ a {
               white-space: nowrap;
             }
             span{
-              padding: 0rem 1rem 0rem 1rem;
+              padding: 0rem 1rem 0rem 2rem;
               width: 50%;
               white-space: nowrap;
               text-align: center;
@@ -169,7 +168,7 @@ a {
     $begincolor : #0D47A1;
     $endcolor : #64B5F6;
     $mediumcolor : #1E88E5;
-    $hr_with : 35%;
+    $hr_with : 50%;
     $hr_height : 20%;
     
     margin:auto;
@@ -217,8 +216,6 @@ a {
             height: $hr_height;
           }
         }
-        
-
       
  
        td:nth-child(odd){
@@ -231,9 +228,7 @@ a {
          width: 20%;
          padding: 1rem 2rem 0 2rem;
        }
-       td[colspan="2"]{
-         padding: 1rem 1rem 0 1rem;
-       }
+       
        .container__delice__banner {
          td{
            display : flex;
@@ -241,15 +236,11 @@ a {
            padding-top: 1rem;
            width: 100%;
            font: bold 0.7em "Open Sans", sans-serif;
-           img {
-             height: 20%;
-             
-             margin-top: 3%;
-           }
+           
           
            span{
-             padding: 0px 50px 0px 50px;
-             width: 50%;
+             padding: 0px 3rem 0px 3rem;
+             width: 25%;
              white-space: nowrap;
  
            }
@@ -501,37 +492,32 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin: 0 0 45px;
+  padding-left: 10%;
   .hover {
-    font-size: 36px;
     text-align: center;
-    margin: 0 auto;
-    padding: 0;
     transition: $animate;
     position: relative;
     &:before,
     &:after {
       content: "";
       position: absolute;
-      bottom: -10px;
+      bottom: -1rem;
+      left : 10%;
       width: 0px;
       height: 5px;
-      margin: 5px 0 0;
+     
       transition: $animate;
       transition-duration: 0.75s;
       opacity: 0;
-      background-color: darken(orange,5%);
+      background-color: darken(black,5%);
     }
-    
-    &.hover-3 {
-      &:before {
-        left: 50%;
-      }
+    &.hover-1 {
+      &:before,
       &:after {
-        right: 50%;
+        left: 10%;
       }
     }
-    
+   
   }
   &:hover {
     cursor: pointer;
@@ -556,7 +542,7 @@ $size: 1rem;
 $minsize: 0.75rem;
 $color: orange;
 
-.loader{
+span.loader{
  
   background-color:$color;
   width:$size;
@@ -577,12 +563,12 @@ $color: orange;
   }
   
   &:before{
-    right:-70px;
+    right:-20px;
     @extend .animate-coloring;
     animation-delay:0.5s;
   }
   &:after{
-    right:-140px;
+    right:-40px;
     @extend .animate-coloring;
     animation-delay:1;
   }
@@ -728,12 +714,12 @@ body {
       }
 
       &__note {
-        padding: 0.5rem 0rem 0rem 0rem;
+        padding: 0 1rem 3rem 1rem;
         width: 80%;
-        margin: auto;
+        
         
         table tr {
-          
+          margin: auto;
         td:nth-child(odd){
           text-align: left;
           width: 90%;
@@ -767,6 +753,24 @@ body {
             }
             span{
               display: none
+            }
+          }
+        }
+      }
+      &__pallette{
+        table {
+          .container__palette__banner {
+            td  hr {
+              margin-top: 1.5rem ;
+             
+                height:  8px;
+                width: 20%;
+            }
+            h2{
+              padding: 0px 2rem 0px 2rem;
+              width: 40%;
+              font:  1.2rem "Apple Chancery", cursive;
+              white-space: nowrap;
             }
           }
         }

@@ -30,7 +30,7 @@ a {
 .container {
   width: 50%;
   margin: auto;
-  padding-top: 3%;
+  padding-top: 2%;
 }
 .container__menu {
   margin: auto;
@@ -81,7 +81,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .container__note {
-  padding: 0 2rem 3rem 2rem;
+  padding: 0 10rem 2rem 10rem;
   background-color: #f8bbd0;
   box-shadow: 1px 1px 12px #555;
 }
@@ -130,7 +130,7 @@ a {
   white-space: nowrap;
 }
 .container__note table .container__note__banner td span {
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0rem 2rem;
   width: 50%;
   white-space: nowrap;
   text-align: center;
@@ -165,17 +165,17 @@ a {
 }
 .container__delice table tr:nth-child(1) hr, .container__delice table tr:nth-child(2) hr, .container__delice table tr:nth-child(3) hr, .container__delice table tr:nth-child(4) hr {
   background-color: #0D47A1;
-  width: 35%;
+  width: 50%;
   height: 20%;
 }
 .container__delice table tr:nth-child(5) hr, .container__delice table tr:nth-child(6) hr, .container__delice table tr:nth-child(7) hr, .container__delice table tr:nth-child(8) hr {
   background-color: #1E88E5;
-  width: 35%;
+  width: 50%;
   height: 20%;
 }
 .container__delice table tr:nth-child(9) hr, .container__delice table tr:nth-child(10) hr, .container__delice table tr:nth-child(11) hr, .container__delice table tr:nth-child(12) hr {
   background-color: #64B5F6;
-  width: 35%;
+  width: 50%;
   height: 20%;
 }
 .container__delice table td:nth-child(odd) {
@@ -188,9 +188,6 @@ a {
   width: 20%;
   padding: 1rem 2rem 0 2rem;
 }
-.container__delice table td[colspan="2"] {
-  padding: 1rem 1rem 0 1rem;
-}
 .container__delice table .container__delice__banner td {
   display: flex;
   flex-direction: row;
@@ -198,13 +195,9 @@ a {
   width: 100%;
   font: bold 0.7em "Open Sans", sans-serif;
 }
-.container__delice table .container__delice__banner td img {
-  height: 20%;
-  margin-top: 3%;
-}
 .container__delice table .container__delice__banner td span {
-  padding: 0px 50px 0px 50px;
-  width: 50%;
+  padding: 0px 3rem 0px 3rem;
+  width: 25%;
   white-space: nowrap;
 }
 .container__chic {
@@ -414,33 +407,27 @@ footer__right {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin: 0 0 45px;
+  padding-left: 10%;
 }
 .underline .hover {
-  font-size: 36px;
   text-align: center;
-  margin: 0 auto;
-  padding: 0;
   transition: all 0.2s ease-in-out;
   position: relative;
 }
 .underline .hover:before, .underline .hover:after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -1rem;
+  left: 10%;
   width: 0px;
   height: 5px;
-  margin: 5px 0 0;
   transition: all 0.2s ease-in-out;
   transition-duration: 0.75s;
   opacity: 0;
-  background-color: #e69500;
+  background-color: black;
 }
-.underline .hover.hover-3:before {
-  left: 50%;
-}
-.underline .hover.hover-3:after {
-  right: 50%;
+.underline .hover.hover-1:before, .underline .hover.hover-1:after {
+  left: 10%;
 }
 .underline:hover {
   cursor: pointer;
@@ -453,7 +440,7 @@ footer__right {
   width: 50%;
 }
 
-.loader {
+span.loader {
   background-color: orange;
   width: 1rem;
   height: 1rem;
@@ -461,7 +448,7 @@ footer__right {
   position: relative;
   margin-top: 0.5rem;
 }
-.loader:before, .loader:after {
+span.loader:before, span.loader:after {
   content: " ";
   position: absolute;
   background-color: orange;
@@ -469,16 +456,16 @@ footer__right {
   height: 1rem;
   border-radius: 50%;
 }
-.loader:before {
-  right: -70px;
+span.loader:before {
+  right: -20px;
   animation-delay: 0.5s;
 }
-.loader:after {
-  right: -140px;
+span.loader:after {
+  right: -40px;
   animation-delay: 1;
 }
 
-.animate-coloring, .loader, .loader:before, .loader:after {
+.animate-coloring, .loader:after, .loader:before, .loader, span.loader, span.loader:before, span.loader:after {
   animation-name: coloring;
   animation-iteration-count: infinite;
   animation-duration: 2s;
@@ -629,8 +616,10 @@ footer > span:hover {
     padding: 1rem 0rem 0 1rem;
   }
   body .container__note {
-    padding: 0.5rem 0rem 0rem 0rem;
+    padding: 0 1rem 3rem 1rem;
     width: 80%;
+  }
+  body .container__note table tr {
     margin: auto;
   }
   body .container__note table tr td:nth-child(odd) {
@@ -663,6 +652,17 @@ footer > span:hover {
   }
   body .container_delice .container__delice__banner td span {
     display: none;
+  }
+  body .container__pallette table .container__palette__banner td hr {
+    margin-top: 1.5rem;
+    height: 8px;
+    width: 20%;
+  }
+  body .container__pallette table .container__palette__banner h2 {
+    padding: 0px 2rem 0px 2rem;
+    width: 40%;
+    font: 1.2rem "Apple Chancery", cursive;
+    white-space: nowrap;
   }
   body button {
     border-radius: 10px;
