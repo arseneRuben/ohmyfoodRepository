@@ -1,4 +1,8 @@
 $darkgreen : #00695c;
+$size: 1rem;
+  $minsize: 0.75rem;
+  $color: orange;
+
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 @import 'https://fonts.googleapis.com/css?family=Lato';
 
@@ -14,7 +18,7 @@ a {
 }
 
 .logo {
-  margin-top: 3rem;
+  padding-top: 4rem;
   z-index: -1;
  
   &__img {
@@ -35,31 +39,31 @@ a {
 .container {
   width: 50%;
   margin: auto;
- padding-top: 2%;
+ padding-top: 1%;
  
   &__menu {
  
     margin:auto;
-  
-    width: 50%;
-    border-spacing: 2rem 1rem;
+    width: 60%;
+    border-spacing: 1.5rem 1.5rem;
     
     td {
-      box-shadow: 1px 1px 12px #555;
       
-      font: 1.2rem 'Fira Sans', sans-serif;
+      box-shadow: 2px 2px 12px #555;
+      padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+      font-size: 1.1rem; 
       height: 10rem;
       opacity: 1;
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
       &:hover {
-        -webkit-transform: scale(1.1, 1.1);
+        font-size: 1.3rem; 
+        padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+      /*  -webkit-transform: scale(1.1, 1.1);
         -moz-transform: scale(1.1, 1.1);
         -o-transform: scale(1.1, 1.1);
         -ms-transform: scale(1.1, 1.1);
-        transform: scale(1.1, 1.1);
-        opacity: .5;
-       
+        transform: scale(1.1, 1.1); */
       }
     }
 
@@ -415,12 +419,51 @@ a {
     }
   
   }
-}
 
+  
 div.button {
   text-align: center;
+}
+
+
+
+ 
+
+
+span.loader{
+ 
+  background-color:$color;
+  width:$size;
+  height:$size;
+  border-radius:50%;
+  position:relative;
+  @extend .animate-coloring;
+  margin-top: 0.5rem;
+  
+  &:before,
+  &:after{
+      content:" ";
+      position:absolute;
+      background-color:$color;
+      width:$size;
+      height:$size;
+      border-radius:50%;
+  }
+  
+  &:before{
+    right:-20px;
+    @extend .animate-coloring;
+    animation-delay:0.5s;
+  }
+  &:after{
+    right:-40px;
+    @extend .animate-coloring;
+    animation-delay:1;
+  }
+}
 
 }
+
 button {
   display: inline-block;
   background-color:$darkgreen;
@@ -451,6 +494,20 @@ button {
 
   
 }
+
+input.visually-hidden {
+  visibility: visible;
+  &:checked{
+    +.next{
+      display: none;
+       }
+    +.loader{
+      display: inline;
+    }
+
+  }
+}
+
 
 
 header{
@@ -538,41 +595,7 @@ footer {
 }
 
 
-$size: 1rem;
-$minsize: 0.75rem;
-$color: orange;
 
-span.loader{
- 
-  background-color:$color;
-  width:$size;
-  height:$size;
-  border-radius:50%;
-  position:relative;
-  @extend .animate-coloring;
-  margin-top: 0.5rem;
-  
-  &:before,
-  &:after{
-      content:" ";
-      position:absolute;
-      background-color:$color;
-      width:$size;
-      height:$size;
-      border-radius:50%;
-  }
-  
-  &:before{
-    right:-20px;
-    @extend .animate-coloring;
-    animation-delay:0.5s;
-  }
-  &:after{
-    right:-40px;
-    @extend .animate-coloring;
-    animation-delay:1;
-  }
-}
 
 .animate-coloring{
   animation-name: coloring;
