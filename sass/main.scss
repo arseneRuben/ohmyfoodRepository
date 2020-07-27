@@ -458,7 +458,7 @@ span.loader{
   &:after{
     right:-40px;
     @extend .animate-coloring;
-    animation-delay:1;
+    animation-delay:1s;
   }
 }
 
@@ -840,7 +840,7 @@ body {
     &:after{
       right:-100px;
       @extend .animate-coloring;
-      animation-delay:1;
+      animation-delay:1s;
     }
   }
 

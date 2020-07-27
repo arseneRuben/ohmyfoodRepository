@@ -365,7 +365,7 @@ a {
 }
 .container span.loader:after {
   right: -40px;
-  animation-delay: 1;
+  animation-delay: 1s;
 }
 
 button {
@@ -701,7 +701,7 @@ footer > span:hover {
 }
 .loader:after {
   right: -100px;
-  animation-delay: 1;
+  animation-delay: 1s;
 }
 
 /*# sourceMappingURL=layout.css.map */
