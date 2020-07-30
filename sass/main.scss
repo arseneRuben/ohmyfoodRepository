@@ -48,7 +48,7 @@ a {
     border-spacing: 1.5rem 1.5rem;
     
     td {
-      
+      width: 50%;
       box-shadow: 2px 2px 12px #555;
       padding: 0.8rem 1.5rem 0.8rem 1.5rem;
       font-size: 1.1rem; 
@@ -59,6 +59,7 @@ a {
       &:hover {
         font-size: 1.3rem; 
         padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+        overflow: hidden;
       /*  -webkit-transform: scale(1.1, 1.1);
         -moz-transform: scale(1.1, 1.1);
         -o-transform: scale(1.1, 1.1);
@@ -430,37 +431,7 @@ div.button {
  
 
 
-span.loader{
- 
-  background-color:$color;
-  width:$size;
-  height:$size;
-  border-radius:50%;
-  position:relative;
-  @extend .animate-coloring;
-  margin-top: 0.5rem;
-  
-  &:before,
-  &:after{
-      content:" ";
-      position:absolute;
-      background-color:$color;
-      width:$size;
-      height:$size;
-      border-radius:50%;
-  }
-  
-  &:before{
-    right:-20px;
-    @extend .animate-coloring;
-    animation-delay:0.5s;
-  }
-  &:after{
-    right:-40px;
-    @extend .animate-coloring;
-    animation-delay:1s;
-  }
-}
+
 
 }
 
@@ -597,12 +568,7 @@ footer {
 
 
 
-.animate-coloring{
-  animation-name: coloring;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-}
+
 
 
 footer>span:hover {
@@ -812,35 +778,55 @@ body {
 
   
 
-  .loader{
+ /* -----------------------------------------
+  =CSS3 Loading animations
+-------------------------------------------- */
+
+/* =Elements style
+---------------------- */
+.load-wrapp {
+  float: left;
  
-    background-color:$color;
-    width:$minsize;
-    height:$minsize;
-    border-radius:50%;
-    position:relative;
-    @extend .animate-coloring;
-    margin-top: 0.5rem;
-    
-    &:before,
-    &:after{
-        content:" ";
-        position:absolute;
-        background-color:$color;
-        width:$minsize;
-    height:$minsize;
-        border-radius:50%;
-    }
-    
-    &:before{
-      right:-50px;
-      @extend .animate-coloring;
-      animation-delay:0.5s;
-    }
-    &:after{
-      right:-100px;
-      @extend .animate-coloring;
-      animation-delay:1s;
-    }
+  margin: 0 10px 10px 0;
+  
+  border-radius: 5px;
+  text-align: center;
+ 
+}
+
+
+
+.load-wrapp:last-child {
+  margin-right: 0;
+}
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: orange;
+}
+
+.load-3 .line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+.load-3 .line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+@keyframes loadingC {
+  0% {
+    transform: translate(0, 0);
   }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 
