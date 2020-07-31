@@ -606,52 +606,52 @@ footer > span:hover {
     margin-top: 3%;
     width: 40%;
   }
-  body .container__chic__note {
+  body .container__note {
     margin: 0rem 1rem 3rem 3rem;
     padding: 0rem 1rem 3rem 3rem;
     width: 70%;
     font-size: 1rem;
   }
-  body .container__chic__note table tr {
+  body .container__note table tr {
     margin: auto;
   }
-  body .container__chic__note table tr td:nth-child(odd) {
+  body .container__note table tr td:nth-child(odd) {
     text-align: left;
     width: 90%;
     padding: 1rem 2rem 0 1rem;
   }
-  body .container__chic__note table tr td:nth-child(even) {
+  body .container__note table tr td:nth-child(even) {
     text-align: right;
     width: 10%;
     padding: 1rem 2rem 0 1rem;
   }
-  body .container__chic__note table tr td[colspan="2"] {
+  body .container__note table tr td[colspan="2"] {
     padding: 1rem 2rem 0 1rem;
   }
-  body .container__chic_delice {
+  body .container_delice {
     width: 100%;
     margin: 0;
     padding: 4rem 0 0 0;
     background-color: #3E2723;
   }
-  body .container__chic_delice .container__delice__banner td {
+  body .container_delice .container__delice__banner td {
     display: flex;
     flex-direction: row;
     width: 100%;
     font: bold 0.7em "Open Sans", sans-serif;
   }
-  body .container__chic_delice .container__delice__banner td img {
+  body .container_delice .container__delice__banner td img {
     display: none;
   }
-  body .container__chic_delice .container__delice__banner td span {
+  body .container_delice .container__delice__banner td span {
     display: none;
   }
-  body .container__chic__pallette table .container__palette__banner td hr {
+  body .container__pallette table .container__palette__banner td hr {
     margin-top: 1.5rem;
     height: 8px;
     width: 20%;
   }
-  body .container__chic__pallette table .container__palette__banner h2 {
+  body .container__pallette table .container__palette__banner h2 {
     padding: 0px 2rem 0px 2rem;
     width: 40%;
     font: 1.2rem "Apple Chancery", cursive;
