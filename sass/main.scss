@@ -177,6 +177,7 @@ a {
     $hr_height : 20%;
     
     margin:auto;
+    margin-top: 2rem;
     padding: 3rem 2rem 3rem 2rem;
     vertical-align: center;
     background-color: #EEEEEE;
@@ -256,7 +257,9 @@ a {
     
   }
   &__chic {
-    padding: 3rem 2rem 3rem 2rem;
+    margin:auto;
+    margin-top: 2rem;
+    padding: 3rem 2rem 1rem 2rem;
     box-shadow: 1px 1px 12px #555;
     background-color: #ffebee;
     text-align: center;
@@ -340,7 +343,8 @@ a {
    
   }
   &__palette {
-    padding: 0rem 6rem 4rem 2rem;
+   
+    padding: 1rem 6rem 4rem 2rem;
     $begincolor_b : #0c630f;
     $endcolor_b : #CCFF90;
     background-color: #E8F5E9;
@@ -678,16 +682,18 @@ body {
       }
      
       &__chic {
-        padding: 3.5rem 0rem 0rem 0rem;
-        width: 100%;
-        margin: 0 0 0 0;
+        margin: auto;
+        
+      padding: 2rem 3.5rem 3rem 2rem;
+      width: 70%;
+      font-size: 0.8rem;
         span b{
           font: 1.5rem "serif", sans-serif;
         }
         table tr {
         td:nth-child(odd){
           text-align: left;
-          width: 90%;
+          width: 100%;
           padding: 1rem 0rem 0 0rem;
         }
         td:nth-child(even){
@@ -699,15 +705,27 @@ body {
           padding: 1rem 0rem 0 1rem;
         }
         }
-        
+        &__banner {
+          td {
+
+          
+          hr {
+            height: 20%;
+            margin-top: 3%;
+            width: 40%;
+           
+          }
+        }
       }
 
       &__note {
-        padding: 0 1rem 3rem 1rem;
-        width: 80%;
+      margin: 0rem 1rem 3rem 3rem;
+      padding: 0rem 1rem 3rem 3rem;
+      width: 70%;
+      font-size: 1.0rem;
         
-        
-        table tr {
+        table  tr {
+          //width: 90%;
           margin: auto;
         td:nth-child(odd){
           text-align: left;
@@ -723,6 +741,7 @@ body {
           padding: 1rem 2rem 0 1rem;
         }
         }
+        
         
       }
 
@@ -771,7 +790,7 @@ body {
     }
    
   
-  
+    }
   
 }
 }
@@ -802,10 +821,10 @@ body {
 
 .line {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background-color: orange;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #FFEB3B;
 }
 
 .load-3 .line:nth-last-child(1) {

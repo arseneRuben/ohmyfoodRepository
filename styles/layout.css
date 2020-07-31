@@ -147,6 +147,7 @@ a {
 }
 .container__delice {
   margin: auto;
+  margin-top: 2rem;
   padding: 3rem 2rem 3rem 2rem;
   vertical-align: center;
   background-color: #EEEEEE;
@@ -205,7 +206,9 @@ a {
   white-space: nowrap;
 }
 .container__chic {
-  padding: 3rem 2rem 3rem 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 3rem 2rem 1rem 2rem;
   box-shadow: 1px 1px 12px #555;
   background-color: #ffebee;
   text-align: center;
@@ -275,7 +278,7 @@ a {
   text-align: center;
 }
 .container__palette {
-  padding: 0rem 6rem 4rem 2rem;
+  padding: 1rem 6rem 4rem 2rem;
   background-color: #E8F5E9;
   font: 0.9rem "Apple Chancery", cursive;
   margin: auto;
@@ -576,16 +579,17 @@ footer > span:hover {
     font: 1rem "Fira Sans", sans-serif;
   }
   body .container__chic {
-    padding: 3.5rem 0rem 0rem 0rem;
-    width: 100%;
-    margin: 0 0 0 0;
+    margin: auto;
+    padding: 2rem 3.5rem 3rem 2rem;
+    width: 70%;
+    font-size: 0.8rem;
   }
   body .container__chic span b {
     font: 1.5rem "serif", sans-serif;
   }
   body .container__chic table tr td:nth-child(odd) {
     text-align: left;
-    width: 90%;
+    width: 100%;
     padding: 1rem 0rem 0 0rem;
   }
   body .container__chic table tr td:nth-child(even) {
@@ -596,56 +600,63 @@ footer > span:hover {
   body .container__chic table tr td[colspan="2"] {
     padding: 1rem 0rem 0 1rem;
   }
-  body .container__note {
-    padding: 0 1rem 3rem 1rem;
-    width: 80%;
+  body .container__chic__banner td hr {
+    height: 20%;
+    margin-top: 3%;
+    width: 40%;
   }
-  body .container__note table tr {
+  body .container__chic__note {
+    margin: 0rem 1rem 3rem 3rem;
+    padding: 0rem 1rem 3rem 3rem;
+    width: 70%;
+    font-size: 1rem;
+  }
+  body .container__chic__note table tr {
     margin: auto;
   }
-  body .container__note table tr td:nth-child(odd) {
+  body .container__chic__note table tr td:nth-child(odd) {
     text-align: left;
     width: 90%;
     padding: 1rem 2rem 0 1rem;
   }
-  body .container__note table tr td:nth-child(even) {
+  body .container__chic__note table tr td:nth-child(even) {
     text-align: right;
     width: 10%;
     padding: 1rem 2rem 0 1rem;
   }
-  body .container__note table tr td[colspan="2"] {
+  body .container__chic__note table tr td[colspan="2"] {
     padding: 1rem 2rem 0 1rem;
   }
-  body .container_delice {
+  body .container__chic_delice {
     width: 100%;
     margin: 0;
     padding: 4rem 0 0 0;
     background-color: #3E2723;
   }
-  body .container_delice .container__delice__banner td {
+  body .container__chic_delice .container__delice__banner td {
     display: flex;
     flex-direction: row;
     width: 100%;
     font: bold 0.7em "Open Sans", sans-serif;
   }
-  body .container_delice .container__delice__banner td img {
+  body .container__chic_delice .container__delice__banner td img {
     display: none;
   }
-  body .container_delice .container__delice__banner td span {
+  body .container__chic_delice .container__delice__banner td span {
     display: none;
   }
-  body .container__pallette table .container__palette__banner td hr {
+  body .container__chic__pallette table .container__palette__banner td hr {
     margin-top: 1.5rem;
     height: 8px;
     width: 20%;
   }
-  body .container__pallette table .container__palette__banner h2 {
+  body .container__chic__pallette table .container__palette__banner h2 {
     padding: 0px 2rem 0px 2rem;
     width: 40%;
     font: 1.2rem "Apple Chancery", cursive;
     white-space: nowrap;
   }
-  body button {
+  body .container button {
     border-radius: 10px;
     font-size: 1rem;
   }
@@ -668,10 +679,10 @@ footer > span:hover {
 
 .line {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background-color: orange;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #FFEB3B;
 }
 
 .load-3 .line:nth-last-child(1) {
